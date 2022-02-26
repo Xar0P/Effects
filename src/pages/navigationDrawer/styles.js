@@ -94,13 +94,11 @@ export const WrapperElement = styled.li`
       padding: 20px;
       visibility: hidden;
       opacity: 0;
-      transition: .5s;
+      transition: .2s;
       border-radius: 5px;
-      display: none;
     }
 
     &:hover > .content {
-      display: block;
       visibility: visible;
       opacity: 1;
     }
