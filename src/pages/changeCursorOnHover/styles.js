@@ -7,15 +7,15 @@ export const Container = styled.section`
   align-items: center;
   min-height: 100vh;
 
-  ul {
+  > ul {
     position: relative;
     display: flex;
     flex-direction: column;
 
-    li {
+    > li {
       list-style: none;
 
-      a {
+      > a {
         position: relative;
         display: inline-block;
         margin: 10px 0;
@@ -26,7 +26,7 @@ export const Container = styled.section`
       }
     }
 
-    .cursor {
+    > .cursor {
       position: fixed;
       width: 20px;
       height: 20px;
@@ -37,7 +37,7 @@ export const Container = styled.section`
       mix-blend-mode: difference;
     }
 
-    li:hover ~ .cursor {
+    > li:hover ~ .cursor {
       transform: scale(6);
     }
   }

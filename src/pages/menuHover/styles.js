@@ -8,7 +8,7 @@ export const Container = styled.section`
   background-color: #0d0f1b;
   overflow: hidden;
 
-  ul {
+  > ul {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -17,7 +17,7 @@ export const Container = styled.section`
       opacity: 0;
     }
 
-    li {
+    > li {
       list-style: none;
 
       &:before {
@@ -41,7 +41,7 @@ export const Container = styled.section`
         letter-spacing: 20px;
       }
 
-      a {
+      > a {
         position: relative;
         display: inline-block;
         padding: 6px 15px;
